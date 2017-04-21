@@ -17,6 +17,8 @@ import UIBaseView from './UI/TabBar/UIBaseView'
 import APIBaseView from './UI/TabBar/APIBaseView'
 import ActivityIndicatorView from './UI/ActivityIndicator/ZWActivityIndicatorView'
 import ButtonView from './UI/Button/ZWButtonView'
+import DatePickerView from './UI/DatePicker/DatePickerIOSView'
+import DrawerLayoutAndroidView from './UI/DrawerLayoutAndroid/ZWDrawerLayoutAndroidView'
 import DetailsView from './UI/DetailsView'
 import AboutDetailsView from './UI/AboutDetailsView'
 
@@ -45,6 +47,8 @@ export const RootNavigator = StackNavigator({
   Home: { screen: TabHomeNavigator },
   ActivityIndicator:{ screen: ActivityIndicatorView},
   Button:{screen: ButtonView},
+  DatePicker: {screen: DatePickerView},
+  DrawerLayoutAndroid: {screen: DrawerLayoutAndroidView},
   Details: {screen: DetailsView},
   AboutDetail: {screen: AboutDetailsView},
 });
