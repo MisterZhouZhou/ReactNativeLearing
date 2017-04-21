@@ -30,6 +30,7 @@ export default class UIBaseView extends Component {
     });
     this.cellData = ['ActivityIndicator',
                      'Button',
+                     'DatePickerIOS'
                      ]
     this.state = {
        dataSource: this.ds.cloneWithRows(this.cellData)
