@@ -19,6 +19,7 @@ import ActivityIndicatorView from './UI/ActivityIndicator/ZWActivityIndicatorVie
 import ButtonView from './UI/Button/ZWButtonView'
 import DatePickerView from './UI/DatePicker/DatePickerIOSView'
 import DrawerLayoutAndroidView from './UI/DrawerLayoutAndroid/ZWDrawerLayoutAndroidView'
+import ViewView from './UI/View/ZWViewView'
 import DetailsView from './UI/DetailsView'
 import AboutDetailsView from './UI/AboutDetailsView'
 
@@ -49,6 +50,7 @@ export const RootNavigator = StackNavigator({
   Button:{screen: ButtonView},
   DatePicker: {screen: DatePickerView},
   DrawerLayoutAndroid: {screen: DrawerLayoutAndroidView},
+  View: {screen: ViewView},
   Details: {screen: DetailsView},
   AboutDetail: {screen: AboutDetailsView},
 });

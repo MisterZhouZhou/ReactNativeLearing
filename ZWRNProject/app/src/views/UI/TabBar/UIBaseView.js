@@ -13,13 +13,20 @@ export default class UIBaseView extends Component {
 
   static navigationOptions = {
     title:'UI',
+    tabBarLabel: 'UI',
+    tabBarIcon: ({focused, tintColor}) =>
+      {
+        if (focused) return (<Image style={{width:20,height:20,backgroundColor:'red'}} />);
+        else return (<Image style={{width:20,height:20,backgroundColor:'green'}} />);
+      }
+    /*
     tabBar: {
       label: 'UI',
       icon: ({ focused, tintColor }) => {
         if (focused) return (<Image style={{width:20,height:20,backgroundColor:'red'}} />);
         else return (<Image style={{width:20,height:20,backgroundColor:'green'}} />);
-      }
-    }
+      },
+    }*/
   };
 
   constructor(props){
@@ -32,6 +39,7 @@ export default class UIBaseView extends Component {
                      'Button',
                      'DatePicker',
                      'DrawerLayoutAndroid',
+                     'View',
                      ]
     this.state = {
        dataSource: this.ds.cloneWithRows(this.cellData)
