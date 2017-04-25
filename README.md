@@ -34,12 +34,14 @@ UITab为UI视图实现，APITab为API实现。
 
 ## UI功能列表
 
-1、ActivityIndicator
-2、Button
-3、DatePicker
-4、DrawLayoutAndroid
-5、View
+1. ActivityIndicator
+2. Button
+3. DatePicker
+4. DrawLayoutAndroid
+5. View
+
 
 ## API功能列表
-1、
+1. 
+
 
