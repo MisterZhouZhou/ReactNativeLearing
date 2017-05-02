@@ -25,6 +25,10 @@ import ViewView from './UI/View/ZWViewView'
 import ActionSheetIOSView from './API/ActionSheetIOS/ZWActionSheetIOS'
 import AdSupportIOSView from './API/AdSupportIOS/ZWAdSupportIOS'
 import AlertView from './API/Alert/ZWAlert'
+import AnimatedView from './API/Animated/ZWAnimated'
+import AppStateView from './API/AppState/ZWAppState'
+import AsyncStorageView from './API/AsyncStorage/ZWAsyncStorage'
+
 
 import DetailsView from './UI/DetailsView'
 import AboutDetailsView from './UI/AboutDetailsView'
@@ -60,6 +64,9 @@ export const RootNavigator = StackNavigator({
   ActionSheetIOS: {screen: ActionSheetIOSView},
   AdSupportIOS: {screen: AdSupportIOSView},
   Alert: {screen: AlertView},
+  Animated: {screen: AnimatedView},
+  AppState: {screen: AppStateView},
+  AsyncStorage: {screen: AsyncStorageView},
   Details: {screen: DetailsView},
   AboutDetail: {screen: AboutDetailsView},
 });

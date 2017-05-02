@@ -36,7 +36,10 @@ export default class APIBaseView extends Component {
     });
     this.cellData = ['ActionSheetIOS',
                      'AdSupportIOS',
-                     'Alert'
+                     'Alert',
+                     'Animated',
+                     'AppState',
+                     'AsyncStorage',
                      ]
     this.state = {
       dataSource:this.ds.cloneWithRows(this.cellData)
