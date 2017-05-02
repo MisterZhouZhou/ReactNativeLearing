@@ -40,6 +40,8 @@ export default class APIBaseView extends Component {
                      'Animated',
                      'AppState',
                      'AsyncStorage',
+                     'Clipboard',
+                     'Geolocation',
                      ]
     this.state = {
       dataSource:this.ds.cloneWithRows(this.cellData)

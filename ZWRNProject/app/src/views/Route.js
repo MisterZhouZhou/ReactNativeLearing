@@ -28,6 +28,8 @@ import AlertView from './API/Alert/ZWAlert'
 import AnimatedView from './API/Animated/ZWAnimated'
 import AppStateView from './API/AppState/ZWAppState'
 import AsyncStorageView from './API/AsyncStorage/ZWAsyncStorage'
+import ClipboardView from './API/Clipboard/ZWClipboard'
+import GeolocationView from './API/Geolocation/ZWGeolocation'
 
 
 import DetailsView from './UI/DetailsView'
@@ -67,6 +69,8 @@ export const RootNavigator = StackNavigator({
   Animated: {screen: AnimatedView},
   AppState: {screen: AppStateView},
   AsyncStorage: {screen: AsyncStorageView},
+  Clipboard: {screen: ClipboardView},
+  Geolocation: {screen: GeolocationView},
   Details: {screen: DetailsView},
   AboutDetail: {screen: AboutDetailsView},
 });
