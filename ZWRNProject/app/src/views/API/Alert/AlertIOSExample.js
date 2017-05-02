@@ -14,7 +14,6 @@ var AlertIOSNormal = React.createClass({
               ]
       )
   },
-
   render() {
       return(
         <Text onPress={this.tapFunction} style={{backgroundColor:'white',margin:10}}>
