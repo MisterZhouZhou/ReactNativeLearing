@@ -12,21 +12,20 @@ import {
 export default class APIBaseView extends Component {
   static navigationOptions = {
     title: 'API',
-    tabBarLabel: 'API',
-    tabBarIcon: ({focused, tintColor}) =>
-      {
-        if (focused) return (<Image style={{width:20,height:20,backgroundColor:'red'}} />);
-        else return (<Image style={{width:20,height:20,backgroundColor:'green'}} />);
-      }
-    /*
+    // tabBarLabel: 'API',
+    // tabBarIcon: ({focused, tintColor}) =>
+    //   {
+    //     if (focused) return (<Image style={{width:20,height:20,backgroundColor:'red'}} />);
+    //     else return (<Image style={{width:20,height:20,backgroundColor:'green'}} />);
+    //   }
+
     tabBar: {
       label: 'API',
       icon: ({ focused, tintColor }) => {
         if (focused) return (<Image style={{width:20,height:20,backgroundColor:'red'}} />);
         else return (<Image style={{width:20,height:20,backgroundColor:'green'}} />);
       }
-    }*/
-    
+    }
   }
 
   constructor(props){
@@ -35,14 +34,17 @@ export default class APIBaseView extends Component {
     this.ds = new ListView.DataSource({
       rowHasChanged: (row1, row2) => row1 !== row2,
     });
-
+    this.cellData = ['ActionSheetIOS',
+                     'AdSupportIOS',
+                     'Alert'
+                     ]
     this.state = {
-      dataSource:this.ds.cloneWithRows(['row1','row2','row3','row4'])
+      dataSource:this.ds.cloneWithRows(this.cellData)
     }
   }
 
   back(rowId){
-    alert(rowId);
+    this.props.navigation.navigate(this.cellData[rowId])
   }
 
   render() {
@@ -57,7 +59,7 @@ export default class APIBaseView extends Component {
   renderRows(rowdata,rowId){
     return(
       <TouchableOpacity style={styles.itemcontenter} onPress={() => this.back(rowId)}>
-          <Text style={styles.itemText}>{rowdata} {rowId}</Text>
+          <Text style={styles.itemText}>{rowdata}</Text>
       </TouchableOpacity>
 
     )
@@ -66,7 +68,7 @@ export default class APIBaseView extends Component {
 
 
 const styles = StyleSheet.create({
-  itemcontenter:{flexDirection: 'row', alignItems: 'center',backgroundColor: 'red',height:40,marginBottom:10},
+  itemcontenter:{flexDirection: 'row', alignItems: 'center',backgroundColor: 'lightgray',height:40,marginBottom:10},
   itemText: {fontSize:16,paddingLeft:10,paddingRight:10}
 });
 

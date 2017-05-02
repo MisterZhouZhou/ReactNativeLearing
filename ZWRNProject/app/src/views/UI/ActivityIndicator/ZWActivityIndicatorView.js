@@ -33,4 +33,4 @@ const styles = StyleSheet.create({
     itemCell: {
       marginBottom: 10,
     }
-  });
+});

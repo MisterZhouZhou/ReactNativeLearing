@@ -20,6 +20,12 @@ import ButtonView from './UI/Button/ZWButtonView'
 import DatePickerView from './UI/DatePicker/DatePickerIOSView'
 import DrawerLayoutAndroidView from './UI/DrawerLayoutAndroid/ZWDrawerLayoutAndroidView'
 import ViewView from './UI/View/ZWViewView'
+
+// API
+import ActionSheetIOSView from './API/ActionSheetIOS/ZWActionSheetIOS'
+import AdSupportIOSView from './API/AdSupportIOS/ZWAdSupportIOS'
+import AlertView from './API/Alert/ZWAlert'
+
 import DetailsView from './UI/DetailsView'
 import AboutDetailsView from './UI/AboutDetailsView'
 
@@ -51,6 +57,9 @@ export const RootNavigator = StackNavigator({
   DatePicker: {screen: DatePickerView},
   DrawerLayoutAndroid: {screen: DrawerLayoutAndroidView},
   View: {screen: ViewView},
+  ActionSheetIOS: {screen: ActionSheetIOSView},
+  AdSupportIOS: {screen: AdSupportIOSView},
+  Alert: {screen: AlertView},
   Details: {screen: DetailsView},
   AboutDetail: {screen: AboutDetailsView},
 });
