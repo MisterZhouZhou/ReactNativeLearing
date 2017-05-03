@@ -42,6 +42,18 @@ UITab为UI视图实现，APITab为API实现。
 
 
 ## API功能列表
-1. 
+1. ActionSheetIOS
+2. AdSupportIOS
+3. Alert
+4. Animated
+5. AppState
+6. AsyncStorage
+7. Clipboard
+8. Geolocation
+9. Keyboard
+10. LayoutAnimation
+11. Linking
+12. NativeMethodsMixin
+13. NetInfo
 
 
