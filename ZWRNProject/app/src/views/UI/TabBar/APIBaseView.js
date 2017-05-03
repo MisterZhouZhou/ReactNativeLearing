@@ -43,6 +43,10 @@ export default class APIBaseView extends Component {
                      'Clipboard',
                      'Geolocation',
                      'Keyboard',
+                     'LayoutAnimation',
+                     'Linking',
+                     'NativeMethodsMixin',
+                     'NetInfo',
                      ]
     this.state = {
       dataSource:this.ds.cloneWithRows(this.cellData)

@@ -31,6 +31,11 @@ import AsyncStorageView from './API/AsyncStorage/ZWAsyncStorage'
 import ClipboardView from './API/Clipboard/ZWClipboard'
 import GeolocationView from './API/Geolocation/ZWGeolocation'
 import KeyboardView from './API/Keyboard/ZWKeyboard'
+import LayoutAnimationView from './API/LayoutAnimation/ZWLayoutAnimation'
+import LinkingView from './API/Linking/ZWLinking'
+import NativeMethodsMixinView from './API/NativeMethodsMixin/ZWNativeMethodsMixin'
+import NetInfoView from './API/NetInfo/ZWNetInfo'
+
 
 
 
@@ -74,6 +79,10 @@ export const RootNavigator = StackNavigator({
   Clipboard: {screen: ClipboardView},
   Geolocation: {screen: GeolocationView},
   Keyboard: {screen: KeyboardView},
+  LayoutAnimation: {screen:LayoutAnimationView},
+  Linking: {screen: LinkingView},
+  NativeMethodsMixin: {screen: NativeMethodsMixinView},
+  NetInfo: {screen: NetInfoView},
   Details: {screen: DetailsView},
   AboutDetail: {screen: AboutDetailsView},
 });
