@@ -35,6 +35,10 @@ import LayoutAnimationView from './API/LayoutAnimation/ZWLayoutAnimation'
 import LinkingView from './API/Linking/ZWLinking'
 import NativeMethodsMixinView from './API/NativeMethodsMixin/ZWNativeMethodsMixin'
 import NetInfoView from './API/NetInfo/ZWNetInfo'
+import PanResponderView from './API/PanResponder/ZWPanResponder'
+import PixelRatioView from './API/PixelRatio/ZWPixelRatio'
+import ShareView from './API/Share/ZWShare'
+
 
 
 
@@ -83,6 +87,9 @@ export const RootNavigator = StackNavigator({
   Linking: {screen: LinkingView},
   NativeMethodsMixin: {screen: NativeMethodsMixinView},
   NetInfo: {screen: NetInfoView},
+  PanResponder: {screen: PanResponderView},
+  PixelRatio: {screen: PixelRatioView},
+  ShareView: {screen: ShareView},
   Details: {screen: DetailsView},
   AboutDetail: {screen: AboutDetailsView},
 });

@@ -47,6 +47,9 @@ export default class APIBaseView extends Component {
                      'Linking',
                      'NativeMethodsMixin',
                      'NetInfo',
+                     'PanResponder',
+                     'PixelRatio',
+                     'ShareView',
                      ]
     this.state = {
       dataSource:this.ds.cloneWithRows(this.cellData)
