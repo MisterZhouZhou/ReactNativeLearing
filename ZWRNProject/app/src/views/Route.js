@@ -31,6 +31,7 @@ import ModalView from './UI/Modal/ZWModal'
 import PickerView from './UI/Picker/ZWPicker'
 import RefreshControlView from './UI/RefreshControl/ZWRefreshControl'
 import SectionListView from './UI/SectionList/ZWSectionList'
+import SliderView from './UI/Slider/ZWSlider'
 
 
 // API
@@ -98,6 +99,7 @@ export const RootNavigator = StackNavigator({
   Picker: {screen: PickerView},
   RefreshControl: {screen: RefreshControlView},
   SectionListView: {screen: SectionListView},
+  Slider: {screen: SliderView},
 
   ActionSheetIOS: {screen: ActionSheetIOSView},
   AdSupportIOS: {screen: AdSupportIOSView},
