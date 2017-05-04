@@ -62,4 +62,9 @@ UITab为UI视图实现，APITab为API实现。
 2. SectionList
 
 ### SectionList效果图
+<<<<<<< HEAD
 ![SectionList](https://github.com/MisterZhouZhou/ReactNativeLearing/blob/master/show/Demo-SectionList.png)
+=======
+
+![SectionList](https://github.com/MisterZhouZhou/ReactNativeLearing/blob/master/show/Demo-SectionList.png)
+>>>>>>> bdf0d2238aefd6ec7d225061e58517226eefb5cf
