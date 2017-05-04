@@ -44,6 +44,9 @@ export default class UIBaseView extends Component {
                      'KeyboardAvoid',
                      'ListView',
                      'Modal',
+                     'Picker',
+                     'RefreshControl',
+                     'SectionListView',
                      ]
     this.state = {
        dataSource: this.ds.cloneWithRows(this.cellData)

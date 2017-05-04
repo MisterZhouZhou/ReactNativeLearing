@@ -35,6 +35,7 @@ export default class APIBaseView extends Component {
       rowHasChanged: (row1, row2) => row1 !== row2,
     });
     this.cellData = ['RNToOC',
+                     'SectionList',
                      ]
     this.state = {
       dataSource:this.ds.cloneWithRows(this.cellData)

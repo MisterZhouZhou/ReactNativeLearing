@@ -28,6 +28,9 @@ import ImageView from './UI/Image/ZWImage'
 import KeyboardAvoidView from './UI/KeyboardAvoidingView/ZWKeyboardAvodingView'
 import ListViewView from './UI/ListView/ZWListView'
 import ModalView from './UI/Modal/ZWModal'
+import PickerView from './UI/Picker/ZWPicker'
+import RefreshControlView from './UI/RefreshControl/ZWRefreshControl'
+import SectionListView from './UI/SectionList/ZWSectionList'
 
 
 // API
@@ -50,6 +53,7 @@ import ShareView from './API/Share/ZWShare'
 
 // Demo
 import RNToOCView from './Demo/RNToOC/ZWRNToOCView'
+import DemoSectionListView from './Demo/SectionList/ZWSectionList'
 
 
 
@@ -91,6 +95,9 @@ export const RootNavigator = StackNavigator({
   KeyboardAvoid: {screen:KeyboardAvoidView},
   ListView: {screen: ListViewView},
   Modal: {screen: ModalView},
+  Picker: {screen: PickerView},
+  RefreshControl: {screen: RefreshControlView},
+  SectionListView: {screen: SectionListView},
 
   ActionSheetIOS: {screen: ActionSheetIOSView},
   AdSupportIOS: {screen: AdSupportIOSView},
@@ -110,6 +117,7 @@ export const RootNavigator = StackNavigator({
   ShareView: {screen: ShareView},
 
   RNToOC: {screen: RNToOCView},
+  SectionList: {screen: DemoSectionListView},
 
   Details: {screen: DetailsView},
   AboutDetail: {screen: AboutDetailsView},
