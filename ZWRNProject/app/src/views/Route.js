@@ -15,11 +15,20 @@ import { TabNavigator } from 'react-navigation'
 
 import UIBaseView from './UI/TabBar/UIBaseView'
 import APIBaseView from './UI/TabBar/APIBaseView'
+import DemoBaseView from './UI/TabBar/DemoBaseView'
+
+// UI
 import ActivityIndicatorView from './UI/ActivityIndicator/ZWActivityIndicatorView'
 import ButtonView from './UI/Button/ZWButtonView'
 import DatePickerView from './UI/DatePicker/DatePickerIOSView'
 import DrawerLayoutAndroidView from './UI/DrawerLayoutAndroid/ZWDrawerLayoutAndroidView'
 import ViewView from './UI/View/ZWViewView'
+import FlatListView from './UI/FlatList/ZWFlatList'
+import ImageView from './UI/Image/ZWImage'
+import KeyboardAvoidView from './UI/KeyboardAvoidingView/ZWKeyboardAvodingView'
+import ListViewView from './UI/ListView/ZWListView'
+import ModalView from './UI/Modal/ZWModal'
+
 
 // API
 import ActionSheetIOSView from './API/ActionSheetIOS/ZWActionSheetIOS'
@@ -39,6 +48,8 @@ import PanResponderView from './API/PanResponder/ZWPanResponder'
 import PixelRatioView from './API/PixelRatio/ZWPixelRatio'
 import ShareView from './API/Share/ZWShare'
 
+// Demo
+import RNToOCView from './Demo/RNToOC/ZWRNToOCView'
 
 
 
@@ -50,6 +61,7 @@ import AboutDetailsView from './UI/AboutDetailsView'
 const TabHomeNavigator = TabNavigator({
   UITab: {screen: UIBaseView},
   APITab: {screen: APIBaseView},
+  DemoTab: {screen: DemoBaseView},
 },
 { tabBarOptions: {
     inactiveTintColor: '#888',   // 未激活时tabbar上字体颜色
@@ -74,6 +86,12 @@ export const RootNavigator = StackNavigator({
   DatePicker: {screen: DatePickerView},
   DrawerLayoutAndroid: {screen: DrawerLayoutAndroidView},
   View: {screen: ViewView},
+  FlatList: {screen: FlatListView},
+  Img: {screen: ImageView},
+  KeyboardAvoid: {screen:KeyboardAvoidView},
+  ListView: {screen: ListViewView},
+  Modal: {screen: ModalView},
+
   ActionSheetIOS: {screen: ActionSheetIOSView},
   AdSupportIOS: {screen: AdSupportIOSView},
   Alert: {screen: AlertView},
@@ -90,6 +108,9 @@ export const RootNavigator = StackNavigator({
   PanResponder: {screen: PanResponderView},
   PixelRatio: {screen: PixelRatioView},
   ShareView: {screen: ShareView},
+
+  RNToOC: {screen: RNToOCView},
+
   Details: {screen: DetailsView},
   AboutDetail: {screen: AboutDetailsView},
 });

@@ -64,6 +64,18 @@ exports.examples = [
       );
     }
   },
+  {
+    title: 'position demo',
+    render(){
+      return(
+        <View>
+           <View style={{zIndex:10,width:100,height:30,backgroundColor:'red'}}></View>
+           <View style={{width:100,height:30,backgroundColor:'yellow',maxWidth:50}}></View>
+           <View style={{position:'absolute',left:20,top:0,width:100,height:30,backgroundColor:'green'}}></View>
+        </View>
+      );
+    }
+  },
 ]
 
 const styles = StyleSheet.create({

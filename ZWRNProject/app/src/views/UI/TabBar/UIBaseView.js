@@ -39,6 +39,11 @@ export default class UIBaseView extends Component {
                      'DatePicker',
                      'DrawerLayoutAndroid',
                      'View',
+                     'FlatList',
+                     'Img',
+                     'KeyboardAvoid',
+                     'ListView',
+                     'Modal',
                      ]
     this.state = {
        dataSource: this.ds.cloneWithRows(this.cellData)
@@ -81,6 +86,6 @@ export default class UIBaseView extends Component {
 }
 
 const styles = StyleSheet.create({
-  item: {marginBottom: 10, height: 40, backgroundColor: 'lightgray', flexDirection: 'row', alignItems: 'center'},
+  item: {paddingLeft:10, paddingRight:10, marginBottom: 10, height: 40, backgroundColor: 'lightgray', flexDirection: 'row', alignItems: 'center'},
   itemText: {fontSize: 16,}
 });
