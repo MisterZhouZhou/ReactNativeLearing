@@ -21,7 +21,15 @@ export default class ZWRNToOCView extends Component{
     });
   }
 
-
+ clickAction2(){
+    // Promise 调用方式
+    // 创建原生模块
+    var NativeTest = require('react-native').NativeModules.NativeTest;
+    // 方法调用
+    NativeTest.thePromisesTest(('zw')).then((events)=>{
+        alert(events+1111)
+    });
+  }
 
   clickAction3(){
     // Promise 调用方式
@@ -40,6 +48,10 @@ export default class ZWRNToOCView extends Component{
         <Text style={{padding:10,borderWidth:1/PixelRatio.get(),borderColor:'red'}}
           onPress={this.clickAction.bind(this)}
         >RCTResponseSenderBlock传参数</Text>
+
+        <Text style={{padding:10,borderWidth:1/PixelRatio.get(),borderColor:'red'}}
+          onPress={this.clickAction2.bind(this)}
+        >RCTPromiseResolveBlock传参数</Text>
 
         <Text style={{padding:10,borderWidth:1/PixelRatio.get(),borderColor:'red'}}
           onPress={this.clickAction3.bind(this)}

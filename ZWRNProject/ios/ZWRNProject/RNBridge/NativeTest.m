@@ -45,5 +45,8 @@ RCT_REMAP_METHOD(thePromisesEvent, names:(NSString *)star resolver:(RCTPromiseRe
   resolve(star);
 }
 
+RCT_REMAP_METHOD(thePromisesTest,theName:(NSString *)star resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
+  resolve(star);
+}
 
 @end
