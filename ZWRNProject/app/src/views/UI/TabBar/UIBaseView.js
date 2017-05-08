@@ -48,6 +48,9 @@ export default class UIBaseView extends Component {
                      'RefreshControl',
                      'SectionListView',
                      'Slider',
+                     'Switch',
+                     'Touchable',
+                     'WebViewView',
                      ]
     this.state = {
        dataSource: this.ds.cloneWithRows(this.cellData)

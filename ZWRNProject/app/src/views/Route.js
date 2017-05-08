@@ -32,6 +32,10 @@ import PickerView from './UI/Picker/ZWPicker'
 import RefreshControlView from './UI/RefreshControl/ZWRefreshControl'
 import SectionListView from './UI/SectionList/ZWSectionList'
 import SliderView from './UI/Slider/ZWSlider'
+import SwitchView from './UI/Switch/ZWSwitch'
+import TouchableView from './UI/Touchable/ZWTouchable'
+import WebViewView from './UI/WebView/ZWWebView'
+
 
 
 // API
@@ -55,7 +59,7 @@ import ShareView from './API/Share/ZWShare'
 // Demo
 import RNToOCView from './Demo/RNToOC/ZWRNToOCView'
 import DemoSectionListView from './Demo/SectionList/ZWSectionList'
-
+import NativeEventEmitterView from './Demo/NativeEventEmitter/ZWNativeEventEmitter'
 
 
 
@@ -100,6 +104,9 @@ export const RootNavigator = StackNavigator({
   RefreshControl: {screen: RefreshControlView},
   SectionListView: {screen: SectionListView},
   Slider: {screen: SliderView},
+  Switch: {screen: SwitchView},
+  Touchable: {screen: TouchableView},
+  WebViewView: {screen: WebViewView},
 
   ActionSheetIOS: {screen: ActionSheetIOSView},
   AdSupportIOS: {screen: AdSupportIOSView},
@@ -120,6 +127,7 @@ export const RootNavigator = StackNavigator({
 
   RNToOC: {screen: RNToOCView},
   SectionList: {screen: DemoSectionListView},
+  NativeEventEmitter: {screen: NativeEventEmitterView},
 
   Details: {screen: DetailsView},
   AboutDetail: {screen: AboutDetailsView},
