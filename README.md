@@ -71,4 +71,4 @@ UITab为UI视图实现，APITab为API实现。
 
 <!--or-->
 
-<img src="https://www.google.com/doodles/kamma-rahbeks-241st-birthday" style="height:200px" />
+<img src="https://github.com/MisterZhouZhou/ReactNativeLearing/blob/master/show/Demo-SectionList.png" style="height:100px,width:100px" />
