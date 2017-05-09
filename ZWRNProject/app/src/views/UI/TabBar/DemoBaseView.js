@@ -38,6 +38,7 @@ export default class APIBaseView extends Component {
                      'SectionList',
                      'NativeEventEmitter',
                      'LoginView',
+                     'Product',
                      ]
     this.state = {
       dataSource:this.ds.cloneWithRows(this.cellData)
