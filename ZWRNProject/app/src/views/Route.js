@@ -60,7 +60,7 @@ import ShareView from './API/Share/ZWShare'
 import RNToOCView from './Demo/RNToOC/ZWRNToOCView'
 import DemoSectionListView from './Demo/SectionList/ZWSectionList'
 import NativeEventEmitterView from './Demo/NativeEventEmitter/ZWNativeEventEmitter'
-
+import LoginViews from './Demo/Login/ZWLogin'
 
 
 import DetailsView from './UI/DetailsView'
@@ -128,6 +128,7 @@ export const RootNavigator = StackNavigator({
   RNToOC: {screen: RNToOCView},
   SectionList: {screen: DemoSectionListView},
   NativeEventEmitter: {screen: NativeEventEmitterView},
+  LoginView: {screen: LoginViews},
 
   Details: {screen: DetailsView},
   AboutDetail: {screen: AboutDetailsView},
