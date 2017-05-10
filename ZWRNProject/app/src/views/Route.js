@@ -63,6 +63,8 @@ import DemoSectionListView from './Demo/SectionList/ZWSectionList'
 import NativeEventEmitterView from './Demo/NativeEventEmitter/ZWNativeEventEmitter'
 import LoginViews from './Demo/Login/ZWLogin'
 import ProductView from './Demo/Product/ZWProductView'
+import DepthActionView from './Demo/DepthAction/DepthAction'
+
 
 
 // ES6
@@ -139,6 +141,7 @@ export const RootNavigator = StackNavigator({
   NativeEventEmitter: {screen: NativeEventEmitterView},
   LoginView: {screen: LoginViews},
   Product: {screen: ProductView},
+  DepthAction: {screen: DepthActionView},
 
   ZWMap: {screen: ZWMapView},
   ZWUnderscore: {screen: ZWUnderscoreView},
