@@ -9,23 +9,23 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-export default class UIBaseView extends Component {
+export default class ES6View extends Component {
 
   static navigationOptions = {
-    title:'UI',
-    tabBarLabel: 'UI',
-    tabBarIcon: ({focused, tintColor}) =>
-      {
-        if (focused) return (<Image style={{width:20,height:20,backgroundColor:'red'}} />);
-        else return (<Image style={{width:20,height:20,backgroundColor:'green'}} />);
-      }
-    // tabBar: {
-    //   label: 'UI',
-    //   icon: ({ focused, tintColor }) => {
+    title:'ES6',
+    //tabBarLabel: 'ES6',
+    // tabBarIcon: ({focused, tintColor}) =>
+    //   {
     //     if (focused) return (<Image style={{width:20,height:20,backgroundColor:'red'}} />);
     //     else return (<Image style={{width:20,height:20,backgroundColor:'green'}} />);
-    //   },
-    // }
+    //   }
+    tabBar: {
+      label: 'ES6',
+      icon: ({ focused, tintColor }) => {
+        if (focused) return (<Image style={{width:20,height:20,backgroundColor:'red'}} />);
+        else return (<Image style={{width:20,height:20,backgroundColor:'green'}} />);
+      },
+    }
   };
 
   constructor(props){
@@ -34,23 +34,8 @@ export default class UIBaseView extends Component {
     this.ds = new ListView.DataSource({
       rowHasChanged:(row1, row2) => row1 !== row2
     });
-    this.cellData = ['ActivityIndicator',
-                     'Button',
-                     'DatePicker',
-                     'DrawerLayoutAndroid',
-                     'View',
-                     'FlatList',
-                     'Img',
-                     'KeyboardAvoid',
-                     'ListView',
-                     'Modal',
-                     'Picker',
-                     'RefreshControl',
-                     'SectionListView',
-                     'Slider',
-                     'Switch',
-                     'Touchable',
-                     'WebViewView',
+    this.cellData = ['ZWMap',
+                      'ZWUnderscore',
                      ]
     this.state = {
        dataSource: this.ds.cloneWithRows(this.cellData)

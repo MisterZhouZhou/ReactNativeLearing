@@ -36,6 +36,10 @@ export default class APIBaseView extends Component {
     });
     this.cellData = ['RNToOC',
                      'SectionList',
+                     'NativeEventEmitter',
+                     'LoginView',
+                     'Product',
+                     'DepthAction',
                      ]
     this.state = {
       dataSource:this.ds.cloneWithRows(this.cellData)

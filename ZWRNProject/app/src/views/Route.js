@@ -16,6 +16,7 @@ import { TabNavigator } from 'react-navigation'
 import UIBaseView from './UI/TabBar/UIBaseView'
 import APIBaseView from './UI/TabBar/APIBaseView'
 import DemoBaseView from './UI/TabBar/DemoBaseView'
+import ES6View from './UI/TabBar/ES6View'
 
 // UI
 import ActivityIndicatorView from './UI/ActivityIndicator/ZWActivityIndicatorView'
@@ -32,6 +33,10 @@ import PickerView from './UI/Picker/ZWPicker'
 import RefreshControlView from './UI/RefreshControl/ZWRefreshControl'
 import SectionListView from './UI/SectionList/ZWSectionList'
 import SliderView from './UI/Slider/ZWSlider'
+import SwitchView from './UI/Switch/ZWSwitch'
+import TouchableView from './UI/Touchable/ZWTouchable'
+import WebViewView from './UI/WebView/ZWWebView'
+
 
 
 // API
@@ -55,7 +60,16 @@ import ShareView from './API/Share/ZWShare'
 // Demo
 import RNToOCView from './Demo/RNToOC/ZWRNToOCView'
 import DemoSectionListView from './Demo/SectionList/ZWSectionList'
+import NativeEventEmitterView from './Demo/NativeEventEmitter/ZWNativeEventEmitter'
+import LoginViews from './Demo/Login/ZWLogin'
+import ProductView from './Demo/Product/ZWProductView'
+import DepthActionView from './Demo/DepthAction/DepthAction'
 
+
+
+// ES6
+import ZWMapView from './ES6/Map/ZWMap'
+import ZWUnderscoreView from './ES6/Underscore/ZWUnderscore'
 
 
 
@@ -67,6 +81,7 @@ const TabHomeNavigator = TabNavigator({
   UITab: {screen: UIBaseView},
   APITab: {screen: APIBaseView},
   DemoTab: {screen: DemoBaseView},
+  ES6Tab: {screen: ES6View},
 },
 { tabBarOptions: {
     inactiveTintColor: '#888',   // 未激活时tabbar上字体颜色
@@ -100,6 +115,9 @@ export const RootNavigator = StackNavigator({
   RefreshControl: {screen: RefreshControlView},
   SectionListView: {screen: SectionListView},
   Slider: {screen: SliderView},
+  Switch: {screen: SwitchView},
+  Touchable: {screen: TouchableView},
+  WebViewView: {screen: WebViewView},
 
   ActionSheetIOS: {screen: ActionSheetIOSView},
   AdSupportIOS: {screen: AdSupportIOSView},
@@ -120,6 +138,13 @@ export const RootNavigator = StackNavigator({
 
   RNToOC: {screen: RNToOCView},
   SectionList: {screen: DemoSectionListView},
+  NativeEventEmitter: {screen: NativeEventEmitterView},
+  LoginView: {screen: LoginViews},
+  Product: {screen: ProductView},
+  DepthAction: {screen: DepthActionView},
+
+  ZWMap: {screen: ZWMapView},
+  ZWUnderscore: {screen: ZWUnderscoreView},
 
   Details: {screen: DetailsView},
   AboutDetail: {screen: AboutDetailsView},

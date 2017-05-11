@@ -39,6 +39,18 @@ UITab为UI视图实现，APITab为API实现。
 3. DatePicker
 4. DrawLayoutAndroid
 5. View
+6. FlatList
+7. Image
+8. KeyBoardAvoid
+9. ListView
+10. Modal
+11. Picker
+12. Refreshcontrol
+13. SectionListView
+14. Slider
+15. Switch
+16. Touchable
+17. WebView
 
 
 ## API功能列表
@@ -55,16 +67,24 @@ UITab为UI视图实现，APITab为API实现。
 11. Linking
 12. NativeMethodsMixin
 13. NetInfo
+14. panResponder
+15. PixelRatio
+16. ShareView
 
 
 ## Demo练习列表
 1. RNToOC
 2. SectionList
+3. NativeEventEmitter
+4. LoginView
 
 ### SectionList效果图
-<<<<<<< HEAD
-![SectionList](https://github.com/MisterZhouZhou/ReactNativeLearing/blob/master/show/Demo-SectionList.png)
-=======
 
-![SectionList](https://github.com/MisterZhouZhou/ReactNativeLearing/blob/master/show/Demo-SectionList.png)
->>>>>>> bdf0d2238aefd6ec7d225061e58517226eefb5cf
+<img src="https://github.com/MisterZhouZhou/ReactNativeLearing/blob/master/show/Demo-SectionList.png" width=250px heith=400px/>
+
+
+### LoginView效果图
+<img src="https://github.com/MisterZhouZhou/ReactNativeLearing/blob/master/show/loginView.png" width=250px heith=400px/>
+
+
+
