@@ -12,20 +12,20 @@ import {
 export default class APIBaseView extends Component {
   static navigationOptions = {
     title: 'API',
-    // tabBarLabel: 'API',
-    // tabBarIcon: ({focused, tintColor}) =>
-    //   {
-    //     if (focused) return (<Image style={{width:20,height:20,backgroundColor:'red'}} />);
-    //     else return (<Image style={{width:20,height:20,backgroundColor:'green'}} />);
-    //   }
-
-    tabBar: {
-      label: 'API',
-      icon: ({ focused, tintColor }) => {
+    tabBarLabel: 'API',
+    tabBarIcon: ({focused, tintColor}) =>
+      {
         if (focused) return (<Image style={{width:20,height:20,backgroundColor:'red'}} />);
         else return (<Image style={{width:20,height:20,backgroundColor:'green'}} />);
       }
-    }
+
+    // tabBar: {
+    //   label: 'API',
+    //   icon: ({ focused, tintColor }) => {
+    //     if (focused) return (<Image style={{width:20,height:20,backgroundColor:'red'}} />);
+    //     else return (<Image style={{width:20,height:20,backgroundColor:'green'}} />);
+    //   }
+    // }
   }
 
   constructor(props){

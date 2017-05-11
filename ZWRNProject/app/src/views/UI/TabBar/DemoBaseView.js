@@ -12,20 +12,20 @@ import {
 export default class APIBaseView extends Component {
   static navigationOptions = {
     title: 'React Native Demo',
-    // tabBarLabel: 'API',
-    // tabBarIcon: ({focused, tintColor}) =>
-    //   {
-    //     if (focused) return (<Image style={{width:20,height:20,backgroundColor:'red'}} />);
-    //     else return (<Image style={{width:20,height:20,backgroundColor:'green'}} />);
-    //   }
-
-    tabBar: {
-      label: 'Demo',
-      icon: ({ focused, tintColor }) => {
+    tabBarLabel: 'Demo',
+    tabBarIcon: ({focused, tintColor}) =>
+      {
         if (focused) return (<Image style={{width:20,height:20,backgroundColor:'red'}} />);
         else return (<Image style={{width:20,height:20,backgroundColor:'green'}} />);
       }
-    }
+
+    // tabBar: {
+    //   label: 'Demo',
+    //   icon: ({ focused, tintColor }) => {
+    //     if (focused) return (<Image style={{width:20,height:20,backgroundColor:'red'}} />);
+    //     else return (<Image style={{width:20,height:20,backgroundColor:'green'}} />);
+    //   }
+    // }
   }
 
   constructor(props){
