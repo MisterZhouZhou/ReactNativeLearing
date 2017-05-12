@@ -40,6 +40,7 @@ export default class APIBaseView extends Component {
                      'LoginView',
                      'Product',
                      'DepthAction',
+                     'Realm',
                      ]
     this.state = {
       dataSource:this.ds.cloneWithRows(this.cellData)
