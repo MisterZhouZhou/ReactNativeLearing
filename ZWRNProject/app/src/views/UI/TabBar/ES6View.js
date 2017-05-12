@@ -13,12 +13,6 @@ export default class ES6View extends Component {
 
   static navigationOptions = {
     title:'ES6',
-    //tabBarLabel: 'ES6',
-    // tabBarIcon: ({focused, tintColor}) =>
-    //   {
-    //     if (focused) return (<Image style={{width:20,height:20,backgroundColor:'red'}} />);
-    //     else return (<Image style={{width:20,height:20,backgroundColor:'green'}} />);
-    //   }
     tabBar: {
       label: 'ES6',
       icon: ({ focused, tintColor }) => {
