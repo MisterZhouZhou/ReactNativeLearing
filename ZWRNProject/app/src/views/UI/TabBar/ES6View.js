@@ -30,6 +30,7 @@ export default class ES6View extends Component {
     });
     this.cellData = ['ZWMap',
                       'ZWUnderscore',
+                      'ZWBaseLanguage',
                      ]
     this.state = {
        dataSource: this.ds.cloneWithRows(this.cellData)

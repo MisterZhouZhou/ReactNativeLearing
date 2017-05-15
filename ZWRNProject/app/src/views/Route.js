@@ -71,6 +71,7 @@ import RealmView from './Demo/Realm/ZWRealm'
 // ES6
 import ZWMapView from './ES6/Map/ZWMap'
 import ZWUnderscoreView from './ES6/Underscore/ZWUnderscore'
+import ZWBaseLanguageView from './ES6/BaseLanguage/ZWBaseLanguage'
 
 
 
@@ -147,6 +148,7 @@ export const RootNavigator = StackNavigator({
 
   ZWMap: {screen: ZWMapView},
   ZWUnderscore: {screen: ZWUnderscoreView},
+  ZWBaseLanguage: {screen: ZWBaseLanguageView},
 
   Details: {screen: DetailsView},
   AboutDetail: {screen: AboutDetailsView},
