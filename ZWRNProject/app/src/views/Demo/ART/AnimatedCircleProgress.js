@@ -25,24 +25,17 @@ export default class AnimatedCircleProgress extends Component {
         progress: 0,
     };
 
-
-
     static propTypes = {
-
         progress: PropTypes.number,
         totalNum: PropTypes.number,
-
         progressWidth: PropTypes.number,
         baseProgressWidth: PropTypes.number,
         raduis: PropTypes.number,
-
         durtime: PropTypes.number,
         progressColor:PropTypes.string,
         progressBaseColor:PropTypes.string,
         centerViewMode:PropTypes.bool,
-
     };
-
 
     // 构造
     constructor(props) {
@@ -62,13 +55,10 @@ export default class AnimatedCircleProgress extends Component {
     }
 
     componentDidMount() {
-        console.log(Tag, 'componentDidMount');
-
         this.startAnimate(this.props.progress)
     }
 
     startAnimate(progress) {
-        console.log(Tag,'startAnimate');
         this.state.progress1.setValue(0);
         Animated.timing(this.state.progress1, {
             toValue: progress,
@@ -78,9 +68,7 @@ export default class AnimatedCircleProgress extends Component {
     }
 
     render() {
-
         const {durtime, progress, ...other} = this.props;
-
         return (
             <AnimatedCP
                 {...other}
