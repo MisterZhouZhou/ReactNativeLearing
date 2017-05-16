@@ -92,7 +92,7 @@ const TabHomeNavigator = TabNavigator({
     indicatorStyle: {height: 0},
     labelStyle: {margin: 0, fontSize: 11, marginTop: 3},
     tabStyle: {paddingBottom: 0, borderTopWidth: 0.5, borderTopColor: '#efefef'},
-    showIcon: true
+    showIcon: true,
   },
   tabBarPosition: 'bottom',
   swipeEnabled: false,
