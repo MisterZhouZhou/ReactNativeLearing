@@ -16,8 +16,7 @@ export default class ES6View extends Component {
     tabBar: {
       label: 'ES6',
       icon: ({ focused, tintColor }) => {
-        if (focused) return (<Image style={{width:20,height:20,backgroundColor:'red'}} />);
-        else return (<Image style={{width:20,height:20,backgroundColor:'green'}} />);
+        return (<Image style={focused?{width:20,height:20,backgroundColor:'red'}:{width:20,height:20,backgroundColor:'green'}} />);
       },
     }
   };

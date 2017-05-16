@@ -15,8 +15,7 @@ export default class APIBaseView extends Component {
     tabBar: {
       label: 'Demo',
       icon: ({ focused, tintColor }) => {
-        if (focused) return (<Image style={{width:20,height:20,backgroundColor:'red'}} />);
-        else return (<Image style={{width:20,height:20,backgroundColor:'green'}} />);
+        return (<Image style={focused?{width:20,height:20,backgroundColor:'red'}:{width:20,height:20,backgroundColor:'green'}} />);
       }
     }
   }
@@ -34,6 +33,7 @@ export default class APIBaseView extends Component {
                      'Product',
                      'DepthAction',
                      'Realm',
+                     'Art',
                      ]
     this.state = {
       dataSource:this.ds.cloneWithRows(this.cellData)

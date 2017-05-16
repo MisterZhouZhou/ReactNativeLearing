@@ -38,6 +38,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* ZWRNProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ZWRNProjectTests.m */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		5F4CB5631EBAC8A800ACB815 /* NativeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4CB5621EBAC8A800ACB815 /* NativeTest.m */; };
+		5F4E7D2D1ECADB0400828967 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4E7D121ECADAE800828967 /* libART.a */; };
 		5F8B2B7B1EC049410063DB1B /* OCNativeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8B2B7A1EC049410063DB1B /* OCNativeEvent.m */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		88E79AA8F3CC4FF3AD5545BC /* libRealmReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA710CFC92AE4939A2D71A91 /* libRealmReact.a */; };
@@ -219,6 +220,13 @@
 			remoteGlobalIDString = 2D2A28201D9B03D100D4039D;
 			remoteInfo = "RCTAnimation-tvOS";
 		};
+		5F4E7D111ECADAE800828967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F4E7D0D1ECADAE800828967 /* ART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CF68AC11AF0540F00FF9E5C;
+			remoteInfo = ART;
+		};
 		5FA5CC921EC54C9900889CA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 792F7D6926E948958A3D96CF /* RealmReact.xcodeproj */;
@@ -268,6 +276,7 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		5F4CB5611EBAC8A800ACB815 /* NativeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeTest.h; sourceTree = "<group>"; };
 		5F4CB5621EBAC8A800ACB815 /* NativeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeTest.m; sourceTree = "<group>"; };
+		5F4E7D0D1ECADAE800828967 /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
 		5F8B2B791EC049410063DB1B /* OCNativeEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCNativeEvent.h; sourceTree = "<group>"; };
 		5F8B2B7A1EC049410063DB1B /* OCNativeEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCNativeEvent.m; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
@@ -290,6 +299,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F4E7D2D1ECADB0400828967 /* libART.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
@@ -460,6 +470,14 @@
 			path = ZWRNProject/RNBridge;
 			sourceTree = "<group>";
 		};
+		5F4E7D0E1ECADAE800828967 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F4E7D121ECADAE800828967 /* libART.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5FA5CC761EC54C9900889CA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -480,6 +498,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				5F4E7D0D1ECADAE800828967 /* ART.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -649,6 +668,10 @@
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 5F4E7D0E1ECADAE800828967 /* Products */;
+					ProjectRef = 5F4E7D0D1ECADAE800828967 /* ART.xcodeproj */;
+				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
@@ -868,6 +891,13 @@
 			fileType = archive.ar;
 			path = "libRCTAnimation-tvOS.a";
 			remoteRef = 5E9157341DD0AC6500FF2AA8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5F4E7D121ECADAE800828967 /* libART.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libART.a;
+			remoteRef = 5F4E7D111ECADAE800828967 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		5FA5CC931EC54C9900889CA8 /* libRealmReact.a */ = {
