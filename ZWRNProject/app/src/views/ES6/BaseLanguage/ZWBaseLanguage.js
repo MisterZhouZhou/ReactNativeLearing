@@ -12,6 +12,9 @@ export default class ZWBaseLanguage extends Component{
     console.log(Number.isInteger(25)) // true
     console.log(Number.isInteger(25.0)) // true
     console.log(Number.isInteger(25.1)) // false
+
+
+
   }
 
   render(){
