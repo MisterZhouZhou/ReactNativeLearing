@@ -68,6 +68,7 @@ import RealmView from './Demo/Realm/ZWRealm'
 import ArtView from './Demo/ART/ZWArt'
 import HeartView from './Demo/ART/Heart'
 import CircleProcessView from './Demo/ART/CircleProcess'
+import ZWDialogView from './Demo/Dialog/ZWDialogView'
 
 
 // ES6
@@ -150,6 +151,7 @@ export const RootNavigator = StackNavigator({
   Art: {screen: ArtView},
   Heart: {screen: HeartView},
   CircleProcess: {screen: CircleProcessView},
+  ZWDialog: {screen: ZWDialogView},
 
   ZWMap: {screen: ZWMapView},
   ZWUnderscore: {screen: ZWUnderscoreView},

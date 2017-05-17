@@ -34,6 +34,7 @@ export default class APIBaseView extends Component {
                      'DepthAction',
                      'Realm',
                      'Art',
+                     'ZWDialog',
                      ]
     this.state = {
       dataSource:this.ds.cloneWithRows(this.cellData)
