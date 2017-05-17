@@ -2,7 +2,7 @@ import React ,{ Component } from 'react'
 import {StyleSheet, View, Text, TouchableOpacity, ART, ScrollView, Dimensions, Animated} from 'react-native'
 var {Surface, Group, Shape, Path} = ART;
 import SpeedCanvas from "./SpeedCanvas";
-import ZWTextInput from '../../../ZWTextInput'
+import ZWTextInput from '../../../component/ZWTextInput'
 export default class ZWArt extends Component{
 
   constructor(props){
@@ -99,8 +99,8 @@ export default class ZWArt extends Component{
         <TouchableOpacity onPress={() => this.changeSpeed()} style={{marginTop:20,padding:10,backgroundColor:'red'}}>
           <Text>进度条</Text>
         </TouchableOpacity>
-        <ScrollView showsHorizontalScrollIndicator={true}>
-           <SpeedCanvas speed={this.state.speed} style={{backgroundColor:'green',width:1000,height:200}}/>
+        <ScrollView horizontal={true}>
+           <SpeedCanvas speed={this.state.speed} />
         </ScrollView>
       </ScrollView>
     );
