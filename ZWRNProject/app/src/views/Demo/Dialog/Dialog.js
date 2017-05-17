@@ -14,7 +14,6 @@ export default class Dialog extends Component{
     super(props);
     this.state = {
       bgOpacity: new Animated.Value(0),
-      contentOpacity: new Animated.Value(0),
       visible: false,
       title:''
     };
@@ -23,13 +22,11 @@ export default class Dialog extends Component{
   show(title) {
     this.setState({visible: true,title:title});
     Animated.timing(this.state.bgOpacity, {toValue: 0.5, duration: 250}).start();
-    Animated.timing(this.state.contentOpacity, {toValue: 1, duration: 250}).start();
   }
 
 
   hide() {
     Animated.timing(this.state.bgOpacity, {toValue: 0, duration: 250}).start();
-    Animated.timing(this.state.contentOpacity, {toValue: 0, duration: 250}).start();
     this.state.bgOpacity.addListener(e => {
       if (e.value == 0) {
         this.setState({visible: false});
@@ -52,7 +49,11 @@ export default class Dialog extends Component{
         <TouchableOpacity activeOpacity={1} onPress={() => this.hide()}>
           <Animated.View style={{width: width, height: height, opacity: this.state.bgOpacity, position: 'absolute', top: 0, left: 0, backgroundColor: '#000'}}></Animated.View>
         </TouchableOpacity>
-        <Animated.View style={{position: 'absolute', top: middleTop, left: middleLeft,opacity: this.state.contentOpacity}}>
+        <Animated.View style={{position: 'absolute', top: middleTop, left: middleLeft,opacity:
+                                this.state.bgOpacity.interpolate({//映射到0.0,1.0之间
+                                                  inputRange: [0,0.5],
+                                                  outputRange: [0, 1.0]
+                                                }),}}>
           <View style={styles.innerContainer}>
              <View style={styles.tipTitleView}>
                <Text style={styles.tipTitleText}>{this.state.title}</Text>
