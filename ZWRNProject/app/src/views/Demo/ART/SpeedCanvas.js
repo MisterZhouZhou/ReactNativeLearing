@@ -133,7 +133,7 @@ var speedCanvas = React.createClass({
 
 var Styles = StyleSheet.create({
     canvasWrap: {
-        width: 200,
+        width: w*2,
         height: 200,
     }
 });

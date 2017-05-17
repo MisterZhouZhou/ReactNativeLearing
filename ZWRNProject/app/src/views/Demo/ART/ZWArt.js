@@ -2,6 +2,7 @@ import React ,{ Component } from 'react'
 import {StyleSheet, View, Text, TouchableOpacity, ART, ScrollView, Dimensions, Animated} from 'react-native'
 var {Surface, Group, Shape, Path} = ART;
 import SpeedCanvas from "./SpeedCanvas";
+import ZWTextInput from '../../../ZWTextInput'
 export default class ZWArt extends Component{
 
   constructor(props){
@@ -20,7 +21,7 @@ export default class ZWArt extends Component{
 
   changeSpeed(){
       var sp = this.state.speed;
-      sp += 1;
+      sp = Math.random()*100;
       this.setState({speed:sp});
   }
 
@@ -53,6 +54,7 @@ export default class ZWArt extends Component{
           // const _path = new Path('M0 100 Q5 20,10 20 T15 35,Q17.5 50,20 50 T25 25,Q27.5 0, 30 0 T35 0,Q37.5 0, 40 0 T45 15');
     return(
       <ScrollView style={{flex:1}}>
+        <ZWTextInput />
         {/*绘制直线*/}
         <Surface width={300} height={2}>
             <Shape d={path} stroke="#000000" strokeWidth={1} />
@@ -97,7 +99,9 @@ export default class ZWArt extends Component{
         <TouchableOpacity onPress={() => this.changeSpeed()} style={{marginTop:20,padding:10,backgroundColor:'red'}}>
           <Text>进度条</Text>
         </TouchableOpacity>
-        <SpeedCanvas speed={this.state.speed} style={{backgroundColor:'green'}}/>
+        <ScrollView showsHorizontalScrollIndicator={true}>
+           <SpeedCanvas speed={this.state.speed} style={{backgroundColor:'green',width:1000,height:200}}/>
+        </ScrollView>
       </ScrollView>
     );
   }
