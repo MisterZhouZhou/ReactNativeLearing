@@ -69,6 +69,8 @@ import ArtView from './Demo/ART/ZWArt'
 import HeartView from './Demo/ART/Heart'
 import CircleProcessView from './Demo/ART/CircleProcess'
 import ZWDialogView from './Demo/Dialog/ZWDialogView'
+import CalculatorView from './Demo/Calculator/ZWCalculator'
+
 
 
 // ES6
@@ -152,6 +154,7 @@ export const RootNavigator = StackNavigator({
   Heart: {screen: HeartView},
   CircleProcess: {screen: CircleProcessView},
   ZWDialog: {screen: ZWDialogView},
+  CalculatorView: {screen: CalculatorView},
 
   ZWMap: {screen: ZWMapView},
   ZWUnderscore: {screen: ZWUnderscoreView},

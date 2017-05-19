@@ -35,6 +35,7 @@ export default class APIBaseView extends Component {
                      'Realm',
                      'Art',
                      'ZWDialog',
+                     'CalculatorView',
                      ]
     this.state = {
       dataSource:this.ds.cloneWithRows(this.cellData)
