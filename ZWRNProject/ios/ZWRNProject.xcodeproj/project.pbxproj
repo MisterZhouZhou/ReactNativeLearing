@@ -39,6 +39,8 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		5F4CB5631EBAC8A800ACB815 /* NativeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4CB5621EBAC8A800ACB815 /* NativeTest.m */; };
 		5F4E7D2D1ECADB0400828967 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4E7D121ECADAE800828967 /* libART.a */; };
+		5F56604C1ED56A6E006397D1 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F56604B1ED56A6E006397D1 /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F56606A1ED56A89006397D1 /* RCTOpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5660691ED56A89006397D1 /* RCTOpenUDID.m */; };
 		5F8B2B7B1EC049410063DB1B /* OCNativeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8B2B7A1EC049410063DB1B /* OCNativeEvent.m */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		88E79AA8F3CC4FF3AD5545BC /* libRealmReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA710CFC92AE4939A2D71A91 /* libRealmReact.a */; };
@@ -277,6 +279,10 @@
 		5F4CB5611EBAC8A800ACB815 /* NativeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeTest.h; sourceTree = "<group>"; };
 		5F4CB5621EBAC8A800ACB815 /* NativeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeTest.m; sourceTree = "<group>"; };
 		5F4E7D0D1ECADAE800828967 /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
+		5F56604A1ED56A6E006397D1 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
+		5F56604B1ED56A6E006397D1 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
+		5F5660681ED56A89006397D1 /* RCTOpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTOpenUDID.h; sourceTree = "<group>"; };
+		5F5660691ED56A89006397D1 /* RCTOpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTOpenUDID.m; sourceTree = "<group>"; };
 		5F8B2B791EC049410063DB1B /* OCNativeEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCNativeEvent.h; sourceTree = "<group>"; };
 		5F8B2B7A1EC049410063DB1B /* OCNativeEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCNativeEvent.m; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
@@ -461,6 +467,10 @@
 		5F4CB5471EBAC86500ACB815 /* RNBridge */ = {
 			isa = PBXGroup;
 			children = (
+				5F56604A1ED56A6E006397D1 /* OpenUDID.h */,
+				5F56604B1ED56A6E006397D1 /* OpenUDID.m */,
+				5F5660681ED56A89006397D1 /* RCTOpenUDID.h */,
+				5F5660691ED56A89006397D1 /* RCTOpenUDID.m */,
 				5F4CB5611EBAC8A800ACB815 /* NativeTest.h */,
 				5F4CB5621EBAC8A800ACB815 /* NativeTest.m */,
 				5F8B2B791EC049410063DB1B /* OCNativeEvent.h */,
@@ -1004,7 +1014,9 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				5F8B2B7B1EC049410063DB1B /* OCNativeEvent.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				5F56606A1ED56A89006397D1 /* RCTOpenUDID.m in Sources */,
 				5F4CB5631EBAC8A800ACB815 /* NativeTest.m in Sources */,
+				5F56604C1ED56A6E006397D1 /* OpenUDID.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

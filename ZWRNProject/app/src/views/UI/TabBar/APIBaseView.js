@@ -42,6 +42,7 @@ export default class APIBaseView extends Component {
                      'PanResponder',
                      'PixelRatio',
                      'ShareView',
+                     'GitTrending',
                      ]
     this.state = {
       dataSource:this.ds.cloneWithRows(this.cellData)

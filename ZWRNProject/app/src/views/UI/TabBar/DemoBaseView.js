@@ -36,6 +36,12 @@ export default class APIBaseView extends Component {
                      'Art',
                      'ZWDialog',
                      'CalculatorView',
+                     'Calendar',
+                     'MultCell',
+                     'OpenUUID',
+                     'DaoJiShi',
+                     'ScrollViewAll',
+                     'CityList',
                      ]
     this.state = {
       dataSource:this.ds.cloneWithRows(this.cellData)

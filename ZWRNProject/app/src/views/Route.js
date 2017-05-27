@@ -56,6 +56,9 @@ import NetInfoView from './API/NetInfo/ZWNetInfo'
 import PanResponderView from './API/PanResponder/ZWPanResponder'
 import PixelRatioView from './API/PixelRatio/ZWPixelRatio'
 import ShareView from './API/Share/ZWShare'
+import GitTrendingView from './API/GitTrending/ZWGitTrending'
+
+
 
 // Demo
 import RNToOCView from './Demo/RNToOC/ZWRNToOCView'
@@ -70,7 +73,12 @@ import HeartView from './Demo/ART/Heart'
 import CircleProcessView from './Demo/ART/CircleProcess'
 import ZWDialogView from './Demo/Dialog/ZWDialogView'
 import CalculatorView from './Demo/Calculator/ZWCalculator'
-
+import CalendarView from './Demo/Calendar/ZWCalendar'
+import MultCellView from './Demo/MultCell/MultCell'
+import OpenUUIDView from './Demo/OpenUUID/ZWOpenUUID'
+import DaoJiShiView from './Demo/DaoJiShi/DaoJiShi'
+import ScrollViewAllView from './Demo/ScrollViewAll/ZWScrollView2'
+import CityListView from './Demo/CityList/ZWCityList'
 
 
 // ES6
@@ -142,6 +150,7 @@ export const RootNavigator = StackNavigator({
   PanResponder: {screen: PanResponderView},
   PixelRatio: {screen: PixelRatioView},
   ShareView: {screen: ShareView},
+  GitTrending: {screen: GitTrendingView},
 
   RNToOC: {screen: RNToOCView},
   SectionList: {screen: DemoSectionListView},
@@ -155,6 +164,12 @@ export const RootNavigator = StackNavigator({
   CircleProcess: {screen: CircleProcessView},
   ZWDialog: {screen: ZWDialogView},
   CalculatorView: {screen: CalculatorView},
+  Calendar:{screen: CalendarView},
+  MultCell: {screen: MultCellView},
+  OpenUUID: {screen: OpenUUIDView},
+  DaoJiShi: {screen: DaoJiShiView},
+  ScrollViewAll: {screen: ScrollViewAllView},
+  CityList: {screen: CityListView},
 
   ZWMap: {screen: ZWMapView},
   ZWUnderscore: {screen: ZWUnderscoreView},
