@@ -79,6 +79,12 @@ import OpenUUIDView from './Demo/OpenUUID/ZWOpenUUID'
 import DaoJiShiView from './Demo/DaoJiShi/DaoJiShi'
 import ScrollViewAllView from './Demo/ScrollViewAll/ZWScrollView2'
 import CityListView from './Demo/CityList/ZWCityList'
+import ShopCartView from './Demo/ShopCart/ZWShopCart'
+import AnimaTView from './Demo/Animated/ZWAnimated'
+import DrawView from './Demo/DrawView/ZWDrawView'
+import MKMapView from './Demo/MKMap/ZWMapView'
+import DrawAnleView from './Demo/DrawAngle/ZWDrawAnleView'
+
 
 
 // ES6
@@ -170,6 +176,11 @@ export const RootNavigator = StackNavigator({
   DaoJiShi: {screen: DaoJiShiView},
   ScrollViewAll: {screen: ScrollViewAllView},
   CityList: {screen: CityListView},
+  ShopCart: {screen: ShopCartView},
+  Animated: {screen: AnimaTView},
+  DrawViews: {screen: DrawView},
+  MKMap: {screen: MKMapView},
+  DrawAnleView: {screen: DrawAnleView},
 
   ZWMap: {screen: ZWMapView},
   ZWUnderscore: {screen: ZWUnderscoreView},

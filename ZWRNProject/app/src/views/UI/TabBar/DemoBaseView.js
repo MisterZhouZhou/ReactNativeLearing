@@ -42,6 +42,11 @@ export default class APIBaseView extends Component {
                      'DaoJiShi',
                      'ScrollViewAll',
                      'CityList',
+                     'ShopCart',
+                     'Animated',
+                     'DrawViews',
+                     'MKMap',
+                     'DrawAnleView',
                      ]
     this.state = {
       dataSource:this.ds.cloneWithRows(this.cellData)

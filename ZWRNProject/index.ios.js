@@ -12,5 +12,13 @@ import {
 
 import Start from './app/src/views/StartView'
 
+if (!__DEV__) {
+  global.console = {
+    info: () => {},
+    log: () => {},
+    warn: () => {},
+    error: () => {},
+  };
+}
 // 程序入口
 AppRegistry.registerComponent('ZWRNProject', () => Start);
