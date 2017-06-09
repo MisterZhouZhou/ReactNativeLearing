@@ -8,7 +8,6 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-
 export default class APIBaseView extends Component {
   static navigationOptions = {
     title: 'React Native Demo',
@@ -22,7 +21,6 @@ export default class APIBaseView extends Component {
 
   constructor(props){
     super(props);
-
     this.ds = new ListView.DataSource({
       rowHasChanged: (row1, row2) => row1 !== row2,
     });
@@ -47,6 +45,7 @@ export default class APIBaseView extends Component {
                      'DrawViews',
                      'MKMap',
                      'DrawAnleView',
+                     'GlobalTheme',
                      ]
     this.state = {
       dataSource:this.ds.cloneWithRows(this.cellData)

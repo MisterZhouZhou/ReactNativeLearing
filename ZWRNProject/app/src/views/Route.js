@@ -84,6 +84,7 @@ import AnimaTView from './Demo/Animated/ZWAnimated'
 import DrawView from './Demo/DrawView/ZWDrawView'
 import MKMapView from './Demo/MKMap/ZWMapView'
 import DrawAnleView from './Demo/DrawAngle/ZWDrawAnleView'
+import GlobalThemeView from './Demo/GlobalTheme/GlobalThemeView'
 
 
 
@@ -181,6 +182,7 @@ export const RootNavigator = StackNavigator({
   DrawViews: {screen: DrawView},
   MKMap: {screen: MKMapView},
   DrawAnleView: {screen: DrawAnleView},
+  GlobalTheme: {screen: GlobalThemeView},
 
   ZWMap: {screen: ZWMapView},
   ZWUnderscore: {screen: ZWUnderscoreView},
