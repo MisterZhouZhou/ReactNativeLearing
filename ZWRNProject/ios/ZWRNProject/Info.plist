@@ -46,6 +46,8 @@
 		<string>smsto</string>
 		<string>mailto</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>使用相册</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

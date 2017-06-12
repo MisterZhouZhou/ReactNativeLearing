@@ -46,6 +46,7 @@ export default class APIBaseView extends Component {
                      'MKMap',
                      'DrawAnleView',
                      'GlobalTheme',
+                     'ImageSwiper',
                      ]
     this.state = {
       dataSource:this.ds.cloneWithRows(this.cellData)

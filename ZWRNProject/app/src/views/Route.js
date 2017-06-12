@@ -85,6 +85,8 @@ import DrawView from './Demo/DrawView/ZWDrawView'
 import MKMapView from './Demo/MKMap/ZWMapView'
 import DrawAnleView from './Demo/DrawAngle/ZWDrawAnleView'
 import GlobalThemeView from './Demo/GlobalTheme/GlobalThemeView'
+import ImageSwiperView from './Demo/ImageSwiper/ZWImageSwiper'
+import ZWImageSwiperView from './Demo/ImageSwiper/ZWImageSwiperView'
 
 
 
@@ -183,6 +185,8 @@ export const RootNavigator = StackNavigator({
   MKMap: {screen: MKMapView},
   DrawAnleView: {screen: DrawAnleView},
   GlobalTheme: {screen: GlobalThemeView},
+  ImageSwiper: {screen: ImageSwiperView},
+  ZWImageSwiperView: {screen: ZWImageSwiperView},
 
   ZWMap: {screen: ZWMapView},
   ZWUnderscore: {screen: ZWUnderscoreView},
