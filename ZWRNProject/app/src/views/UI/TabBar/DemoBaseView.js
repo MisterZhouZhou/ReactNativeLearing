@@ -48,6 +48,7 @@ export default class APIBaseView extends Component {
                      'GlobalTheme',
                      'ImageSwiper',
                      'ZWWeather',
+                     'CustomList',
                      ]
     this.state = {
       dataSource:this.ds.cloneWithRows(this.cellData)

@@ -1,0 +1,3 @@
+rootProject.name = 'DouKanMV'
+
+include ':app'

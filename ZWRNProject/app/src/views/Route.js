@@ -88,6 +88,7 @@ import GlobalThemeView from './Demo/GlobalTheme/GlobalThemeView'
 import ImageSwiperView from './Demo/ImageSwiper/ZWImageSwiper'
 import ZWImageSwiperView from './Demo/ImageSwiper/ZWImageSwiperView'
 import ZWWeatherView from './Demo/Weather/ZWWeather'
+import CustomListView from './Demo/CustomListView/ZWCustomListView'
 
 
 // ES6
@@ -188,6 +189,7 @@ export const RootNavigator = StackNavigator({
   ImageSwiper: {screen: ImageSwiperView},
   ZWImageSwiperView: {screen: ZWImageSwiperView},
   ZWWeather: {screen: ZWWeatherView},
+  CustomList: {screen: CustomListView},
 
   ZWMap: {screen: ZWMapView},
   ZWUnderscore: {screen: ZWUnderscoreView},
