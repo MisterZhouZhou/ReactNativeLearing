@@ -49,6 +49,10 @@ export default class APIBaseView extends Component {
                      'ImageSwiper',
                      'ZWWeather',
                      'CustomList',
+                     'ActionSheet',
+                     'KeyboardAvoiding',
+                     'ZWRefreshControl',
+                     'ZWPulseLoader',
                      ]
     this.state = {
       dataSource:this.ds.cloneWithRows(this.cellData)

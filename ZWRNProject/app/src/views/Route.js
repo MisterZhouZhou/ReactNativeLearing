@@ -89,6 +89,10 @@ import ImageSwiperView from './Demo/ImageSwiper/ZWImageSwiper'
 import ZWImageSwiperView from './Demo/ImageSwiper/ZWImageSwiperView'
 import ZWWeatherView from './Demo/Weather/ZWWeather'
 import CustomListView from './Demo/CustomListView/ZWCustomListView'
+import ActionSheetView from './Demo/ActionSheet/ZWActionSheet'
+import KeyboardAvoidingView from './Demo/KeyboardAvoidingView/ZWKeyboardAvoidingView'
+import ZWRefreshControlView from './Demo/RefreshControl/RefreshControlView'
+import ZWPulseLoaderView from './Demo/PulseLoaderView/ZWPulseLoader'
 
 
 // ES6
@@ -190,6 +194,10 @@ export const RootNavigator = StackNavigator({
   ZWImageSwiperView: {screen: ZWImageSwiperView},
   ZWWeather: {screen: ZWWeatherView},
   CustomList: {screen: CustomListView},
+  ActionSheet: {screen: ActionSheetView},
+  KeyboardAvoiding:{screen: KeyboardAvoidingView},
+  ZWRefreshControl: {screen: ZWRefreshControlView},
+  ZWPulseLoader: {screen: ZWPulseLoaderView},
 
   ZWMap: {screen: ZWMapView},
   ZWUnderscore: {screen: ZWUnderscoreView},
