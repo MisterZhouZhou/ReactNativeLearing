@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "native-base": "^2.1.5"
+    "native-base": "^2.1.5",
+    "react-native-shadow": "^1.2.1",
+    "react-native-svg": "^5.4.0"
   }
 }

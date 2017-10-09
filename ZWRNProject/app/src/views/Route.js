@@ -93,6 +93,7 @@ import ActionSheetView from './Demo/ActionSheet/ZWActionSheet'
 import KeyboardAvoidingView from './Demo/KeyboardAvoidingView/ZWKeyboardAvoidingView'
 import ZWRefreshControlView from './Demo/RefreshControl/RefreshControlView'
 import ZWPulseLoaderView from './Demo/PulseLoaderView/ZWPulseLoader'
+import ZWShadowView from './Demo/shadow/ZWShadowView'
 
 
 // ES6
@@ -198,6 +199,7 @@ export const RootNavigator = StackNavigator({
   KeyboardAvoiding:{screen: KeyboardAvoidingView},
   ZWRefreshControl: {screen: ZWRefreshControlView},
   ZWPulseLoader: {screen: ZWPulseLoaderView},
+  ZWShadow: {screen: ZWShadowView},
 
   ZWMap: {screen: ZWMapView},
   ZWUnderscore: {screen: ZWUnderscoreView},

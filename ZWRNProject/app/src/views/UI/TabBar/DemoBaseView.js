@@ -53,6 +53,7 @@ export default class APIBaseView extends Component {
                      'KeyboardAvoiding',
                      'ZWRefreshControl',
                      'ZWPulseLoader',
+                     'ZWShadow',
                      ]
     this.state = {
       dataSource:this.ds.cloneWithRows(this.cellData)
