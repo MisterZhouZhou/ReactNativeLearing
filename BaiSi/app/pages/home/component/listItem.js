@@ -33,32 +33,23 @@ export default class listItem extends Component {
 
     picturePress(){
         let {navigator} = this.props;
-
         if (navigator) {
             InteractionManager.runAfterInteractions(()=> {
-                navigator.navigate({
-                    component: PictureDetail,
-                    passProps:{
-                        pictureData:this.props.itemData
-                    }
-                })
+                // navigator.navigate('PictureDetailView',
+                //     {pictureData:this.props.itemData}
+                // });
+                navigator.navigate('PictureDetailView',{pictureData:this.props.itemData});
             });
         }
     }
 
     videoPress(){
-            alert('videoPress');
+        alert('点击视频');
         let {navigator} = this.props;
         if (navigator) {
             InteractionManager.runAfterInteractions(()=> {
-                // alert('点击视频');
-                // navigator.push({
-                //     component: VideoDetail,
-                //     passProps:{
-                //         videoData:this.props.itemData,
-                //         isVideoDetail:true
-                //     }
-                // })
+                alert('点击视频');
+                 // navigator.navigate('VideoDetailView',{pictureData:this.props.itemData, isVideoDetail:true})
             });
         }
     }

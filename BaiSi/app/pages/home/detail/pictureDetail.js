@@ -31,7 +31,8 @@ export default class pictureDetail extends Component {
 
     constructor(props){
         super(props);
-        let imageHeight = width * this.props.pictureData.height / this.props.pictureData.width;
+        let pictureData = this.props.navigation.state.params.pictureData;
+        let imageHeight = width * pictureData.height / pictureData.width;
         console.log(imageHeight);
         this.state={
             imageHeight:imageHeight,
@@ -50,11 +51,12 @@ export default class pictureDetail extends Component {
     }
 
     renderPicture(){
+        let pictureData = this.props.navigation.state.params.pictureData;
         if (this.state.imageHeight > height){
             // console.log('长图'+this.props.pictureData.height);
             return(
                 <TouchableOpacity onPress={()=>{this.popPress()}} activeOpacity={0.9}>
-                    <Image source={{uri:this.props.pictureData.cdn_img}}
+                    <Image source={{uri:pictureData.cdn_img}}
                            style={[styles.imageStyle,{height:this.state.imageHeight}]}
                            resizeMode='contain'
                     />
@@ -63,7 +65,7 @@ export default class pictureDetail extends Component {
         }
         return(
             <TouchableOpacity onPress={()=>{this.popPress()}} activeOpacity={0.9}>
-                <Image source={{uri:this.props.pictureData.image0}}
+                <Image source={{uri:pictureData.image0}}
                        style={[styles.imageNormalStyle,
                              {height:this.state.imageHeight,marginTop:(height-this.state.imageHeight) / 2}]}
                 />
@@ -72,6 +74,7 @@ export default class pictureDetail extends Component {
     }
 
     render() {
+         let pictureData = this.props.navigation.state.params.pictureData;
         return (
             <ScrollView
                 // 横向滚动
@@ -85,7 +88,7 @@ export default class pictureDetail extends Component {
                 scrollEnabled={true}
                 style={styles.container}
             >
-                <PictureItem pictureData={this.props.pictureData} isPicDetail={true}
+                <PictureItem pictureData={pictureData} isPicDetail={true}
                              popPress={()=>this.popPress()}/>
             </ScrollView>
         );

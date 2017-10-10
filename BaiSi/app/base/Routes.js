@@ -2,6 +2,8 @@ import { TabNavigator, StackNavigator, DrawerNavigator } from 'react-navigation'
 import HomeView from '../pages/home/homeContainer';
 import MainView from '../pages/main/mainContainer';
 import MiddleView from '../pages/middle/middleContainer';
+import PictureDetail from '../pages/home/detail/pictureDetail';
+import VideoDetail from '../pages/home/detail/videoDetail';
 
 // 标签导航
 const TabHomeNavigator = TabNavigator({
@@ -24,4 +26,6 @@ const TabHomeNavigator = TabNavigator({
 // 主栈
 export const RootNavigator = StackNavigator({
   Home: {screen: TabHomeNavigator},
+  PictureDetailView: {screen: PictureDetail},
+  VideoDetailView: {screen: VideoDetail},
 });

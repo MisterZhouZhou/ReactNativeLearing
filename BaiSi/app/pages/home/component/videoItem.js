@@ -280,7 +280,6 @@ export default class Detail extends Component {
                         resizeMode={this.state.resizeMode}
                         // 重复播放
                         repeat={false}
-
                         onLoadStart={this.onLoadStart}
                         onLoad={this.onLoad}
                         onProgress={this.onProgress}
@@ -372,8 +371,8 @@ export default class Detail extends Component {
         this.startBegin();
         this.setState({
             isPlay:false,
-            paused:false,
-        })
+            paused:false
+        });
     }
 
     render() {
@@ -384,8 +383,6 @@ export default class Detail extends Component {
                 </TouchableOpacity>
                 :
                 this.renderPlayVideo()
-
-
         );
     }
 }
