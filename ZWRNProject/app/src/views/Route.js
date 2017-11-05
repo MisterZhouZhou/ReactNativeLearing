@@ -56,6 +56,9 @@ import NetInfoView from './API/NetInfo/ZWNetInfo'
 import PanResponderView from './API/PanResponder/ZWPanResponder'
 import PixelRatioView from './API/PixelRatio/ZWPixelRatio'
 import ShareView from './API/Share/ZWShare'
+import GitTrendingView from './API/GitTrending/ZWGitTrending'
+
+
 
 // Demo
 import RNToOCView from './Demo/RNToOC/ZWRNToOCView'
@@ -70,7 +73,27 @@ import HeartView from './Demo/ART/Heart'
 import CircleProcessView from './Demo/ART/CircleProcess'
 import ZWDialogView from './Demo/Dialog/ZWDialogView'
 import CalculatorView from './Demo/Calculator/ZWCalculator'
-
+import CalendarView from './Demo/Calendar/ZWCalendar'
+import MultCellView from './Demo/MultCell/MultCell'
+import OpenUUIDView from './Demo/OpenUUID/ZWOpenUUID'
+import DaoJiShiView from './Demo/DaoJiShi/DaoJiShi'
+import ScrollViewAllView from './Demo/ScrollViewAll/ZWScrollView2'
+import CityListView from './Demo/CityList/ZWCityList'
+import ShopCartView from './Demo/ShopCart/ZWShopCart'
+import AnimaTView from './Demo/Animated/ZWAnimated'
+import DrawView from './Demo/DrawView/ZWDrawView'
+import MKMapView from './Demo/MKMap/ZWMapView'
+import DrawAnleView from './Demo/DrawAngle/ZWDrawAnleView'
+import GlobalThemeView from './Demo/GlobalTheme/GlobalThemeView'
+import ImageSwiperView from './Demo/ImageSwiper/ZWImageSwiper'
+import ZWImageSwiperView from './Demo/ImageSwiper/ZWImageSwiperView'
+import ZWWeatherView from './Demo/Weather/ZWWeather'
+import CustomListView from './Demo/CustomListView/ZWCustomListView'
+import ActionSheetView from './Demo/ActionSheet/ZWActionSheet'
+import KeyboardAvoidingView from './Demo/KeyboardAvoidingView/ZWKeyboardAvoidingView'
+import ZWRefreshControlView from './Demo/RefreshControl/RefreshControlView'
+import ZWPulseLoaderView from './Demo/PulseLoaderView/ZWPulseLoader'
+import ZWShadowView from './Demo/shadow/ZWShadowView'
 
 
 // ES6
@@ -142,6 +165,7 @@ export const RootNavigator = StackNavigator({
   PanResponder: {screen: PanResponderView},
   PixelRatio: {screen: PixelRatioView},
   ShareView: {screen: ShareView},
+  GitTrending: {screen: GitTrendingView},
 
   RNToOC: {screen: RNToOCView},
   SectionList: {screen: DemoSectionListView},
@@ -155,6 +179,27 @@ export const RootNavigator = StackNavigator({
   CircleProcess: {screen: CircleProcessView},
   ZWDialog: {screen: ZWDialogView},
   CalculatorView: {screen: CalculatorView},
+  Calendar:{screen: CalendarView},
+  MultCell: {screen: MultCellView},
+  OpenUUID: {screen: OpenUUIDView},
+  DaoJiShi: {screen: DaoJiShiView},
+  ScrollViewAll: {screen: ScrollViewAllView},
+  CityList: {screen: CityListView},
+  ShopCart: {screen: ShopCartView},
+  Animated: {screen: AnimaTView},
+  DrawViews: {screen: DrawView},
+  MKMap: {screen: MKMapView},
+  DrawAnleView: {screen: DrawAnleView},
+  GlobalTheme: {screen: GlobalThemeView},
+  ImageSwiper: {screen: ImageSwiperView},
+  ZWImageSwiperView: {screen: ZWImageSwiperView},
+  ZWWeather: {screen: ZWWeatherView},
+  CustomList: {screen: CustomListView},
+  ActionSheet: {screen: ActionSheetView},
+  KeyboardAvoiding:{screen: KeyboardAvoidingView},
+  ZWRefreshControl: {screen: ZWRefreshControlView},
+  ZWPulseLoader: {screen: ZWPulseLoaderView},
+  ZWShadow: {screen: ZWShadowView},
 
   ZWMap: {screen: ZWMapView},
   ZWUnderscore: {screen: ZWUnderscoreView},
