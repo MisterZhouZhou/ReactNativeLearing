@@ -22,7 +22,8 @@ export default class ZWSwitch extends Component{
         alert('code == 200');
     }
     else {//..真的是未知的错误
-        logf('传回其他参数', data.result);
+        // logf('传回其他参数', data.result);
+        console.warn('未知的错误');
     }
 }
 

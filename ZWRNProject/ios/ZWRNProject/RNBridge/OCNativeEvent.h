@@ -8,6 +8,6 @@
 
 #import <React/RCTEventEmitter.h>
 
-@interface OCNativeEvent : RCTEventEmitter<RCTBridgeModule>
+@interface OCNativeEvent : RCTEventEmitter<RCTBridgeModule,NSURLSessionDelegate>
 
 @end

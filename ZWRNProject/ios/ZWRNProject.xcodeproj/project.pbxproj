@@ -532,6 +532,7 @@
 				00E356EF1AD99517003FC87E /* ZWRNProjectTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				C7E6A4C76C6F4B14979BF0A6 /* Frameworks */,
+				A03D661D1FAEA6A9005F4632 /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -546,6 +547,14 @@
 				2D02E4901E0B4A5D006451C7 /* ZWRNProject-tvOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A03D661D1FAEA6A9005F4632 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				AA710CFC92AE4939A2D71A91 /* libRealmReact.a */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		C7E6A4C76C6F4B14979BF0A6 /* Frameworks */ = {
@@ -644,6 +653,9 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = RTV94SE5S4;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1104,6 +1116,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = RTV94SE5S4;
 				INFOPLIST_FILE = ZWRNProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1121,6 +1134,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RTV94SE5S4;
 				INFOPLIST_FILE = ZWRNProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
